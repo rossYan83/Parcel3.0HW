@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+     <div class="container">
+        <div class="game-card">
+            <h1>🎲 Вгадай число</h1>
+            <p class="subtitle">Число від 1 до 100</p>
+            
+            <div class="game-info">
+                <div class="info-item">
+                    <span class="label">Спроб:</span>
+                    <span class="value" id="attempts">0</span>
+                </div>
+                <div class="info-item">
+                    <span class="label">Рекорд:</span>
+                    <span class="value" id="record">-</span>
+                </div>
+            </div>
+
+            <div class="message" id="message">
+                Введіть число та натисніть "Перевірити"
+            </div>
+
+            <div class="input-group">
+                <input 
+                    type="number" 
+                    id="guessInput" 
+                    placeholder="Ваше число..." 
+                    min="1" 
+                    max="100"
+                >
+                <button class="btn btn-primary" id="checkBtn">
+                    Перевірити
+                </button>
+            </div>
+
+            <button class="btn btn-secondary" id="restartBtn">
+                🔄 Нова гра
+            </button>
+
+            <div class="history" id="history"></div>
+        </div>
+    </div>
+    <script type="module" src="./js/index.js"></script>
+</body>
+</html>
